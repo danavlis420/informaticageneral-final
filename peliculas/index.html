@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas - STAR WARS</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/aos.css">
+</head>
+<body>
+<div>
+<nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html"><img id="logonav" class="logo-navbar" src="..\img\logo1.png" onmouseover="this.src='../img/logo2.png'" onmouseout="this.src='../img/logo1.png'" alt="Logo de Star Wars"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="..\index.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Películas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="..\peliculas\index.html">Info</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="..\peliculas\original.html">Trilogía original</a></li>
+              <li><a class="dropdown-item" href="..\peliculas\precuelas.html">Precuelas</a></li>
+              <li><a class="dropdown-item" href="..\peliculas\secuelas.html">Secuelas</a></li>
+              <li><a class="dropdown-item" href="..\peliculas\otras.html">Otras</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Series
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="..\series\index.html">Info</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="..\series\animadas.html">Animadas</a></li>
+              <li><a class="dropdown-item" href="..\series\live.html">Live action</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="..\juegos\index.html">Videojuegos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="..\quiz\index.html">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="..\about\index.html">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="..\contacto\index.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+</div>
+<div class="w-75 mx-auto text-center" id="contenedortitulo">
+  <h1 class="p-3 titulo1">PELÍCULAS</h1>
+</div>
+<video loop muted autoplay class="bg-video">
+  <source src="../video/fondo1.mp4" type="video/mp4">
+</video>
+
+<div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-md mb-4 order-md-2" >
+            <div id="carouselFotos" class="carousel slide carouselround p-1" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2500">
+                  <img src="..\img\capEpisodioI.jpg" class="d-block w-100" alt="Frame de Episodio I">
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                  <img src="..\img\capEpisodioIII.jpg" class="d-block w-100" alt="Frame de Episodio III">
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                  <img src="..\img\capEpisodioIV.jpg" class="d-block w-100" alt="Frame de Episodio IV">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md mb-4">
+            <div class="card cardinfo">
+              <div class="card-body">
+                <p class="card-text p-1"><span class="resaltartxt">Star Wars</span> comenzó como una serie de películas de ciencia ficción épicas creadas por George Lucas. La franquicia inicia con la película original "Star Wars" en 1977, que luego se convirtió en "Star Wars: Episodio IV - Una nueva esperanza", seguida de dos secuelas, "Star Wars: Episodio V - El imperio contraataca" y "Star Wars: Episodio VI - El retorno del Jedi".</p>
+                <p class="card-text p-1">La historia de Star Wars se desarrolla en una galaxia ficticia, en la que un grupo de héroes lucha contra el lado oscuro de la Fuerza, liderado por el malvado Darth Vader y el Emperador Palpatine. La franquicia es conocida por sus efectos especiales innovadores, su música icónica y su narrativa emocionante.</p>
+                <h5 class="card-title p-2 mt-2">Listado de películas</h5>
+                <p class="card-text p-1 mb-3 text-start mx-4">Trilogía <a href="..\peliculas\original.html" class="resaltartxt">original</a> de Star Wars.</p>
+                <p class="card-text p-1 mb-3 text-start mx-4">Trilogía de <a href="..\peliculas\precuelas.html" class="resaltartxt">precuelas</a> de Star Wars.</p>
+                <p class="card-text p-1 mb-3 text-start mx-4">Trilogía de <a href="..\peliculas\secuelas.html" class="resaltartxt">secuelas</a> de Star Wars.</p>
+                <p class="card-text p-1 mb-3 text-start mx-4"><a href="..\peliculas\otras.html" class="resaltartxt">Otras</a> películas de Star Wars.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
+<script src="..\js\bootstrap.bundle.min.js"></script>
+<!-- ========= js anim ========== -->
+<script src="../js/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: 'ease-in-sine',
+    delay: 100,
+  });
+</script>
+</body>
+</html>

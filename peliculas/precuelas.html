@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precuelas - STAR WARS</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/aos.css">
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img id="logonav" class="logo-navbar" src="..\img\logo1.png" onmouseover="this.src='../img/logo2.png'" onmouseout="this.src='../img/logo1.png'" alt="Logo de Star Wars"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="..\index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Películas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="..\peliculas\index.html">Info</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="..\peliculas\original.html">Trilogía original</a></li>
+                  <li><a class="dropdown-item active" href="..\peliculas\precuelas.html">Precuelas</a></li>
+                  <li><a class="dropdown-item" href="..\peliculas\secuelas.html">Secuelas</a></li>
+                  <li><a class="dropdown-item" href="..\peliculas\otras.html">Otras</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Series
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="..\series\index.html">Info</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="..\series\animadas.html">Animadas</a></li>
+                  <li><a class="dropdown-item" href="..\series\live.html">Live action</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..\juegos\index.html">Videojuegos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..\quiz\index.html">Quiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..\about\index.html">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..\contacto\index.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</div>
+<div class="w-75 mx-auto text-center" id="contenedortitulo">
+  <h1 class="p-3 titulo1">PELÍCULAS</h1>
+</div>
+<div class="container-fluid">
+  <div class="row text-center">
+    <div class="col-md-4 mb-4">
+      <div class="card cardinfo">
+        <img src="../img/t-precuelas.jpg" class="card-img-top mb-2" alt="Trilogía de precuelas">
+        <h5 class="card-title m-0 linkcard"><a href="..\peliculas\original.html">Trilogía original</a></h5>
+        <h5 class="card-title m-0 linkcard linkcardactivo"><a href="..\peliculas\precuelas.html">Precuelas</a></h5>
+        <h5 class="card-title m-0 linkcard"><a href="..\peliculas\secuelas.html">Secuelas</a></h5>
+        <h5 class="card-title m-0 linkcard"><a href="..\peliculas\otras.html">Otras</a></h5>
+      </div>
+    </div>
+    <div class="col-md mb-4">
+      <div class="card cardinfo">
+        <section class="acordeoncard" id="peli1">
+          <h2 class="card-title p-2"><a class="resaltartxt" href="#peli1">Star Wars: Episodio I La Amenaza Fantasma</a></h2>
+          <div class="mx-auto text-center">
+            <img src="../img/episodio1.jpg" class="mb-2 imagenpelicula" alt="Poster episodio 1">
+          </div>
+          <div>
+            <p class="card-text px-5 mb-4">La trama describe la historia del maestro jedi Qui-Gon Jinn y de su aprendiz Obi-Wan Kenobi, que escoltan y protegen a la Reina Amidala desde su planeta Naboo hasta Coruscant con la esperanza de encontrar una salida pacífica a un conflicto comercial interplanetario a gran escala. También trata del joven Anakin Skywalker antes de convertirse en Jedi, presentado como un esclavo con un potencial de la Fuerza inusualmente fuerte, y debe lidiar con el misterioso regreso de los Sith.</p>
+          </div>
+        </section>
+        <section class="acordeoncard" id="peli2">
+          <h2 class="card-title p-2"><a class="resaltartxt" href="#peli2">Star Wars: Episodio II El Ataque de los Clones</a></h2>
+          <div class="mx-auto text-center">
+            <img src="../img/episodio2.jpg" class="mb-2 imagenpelicula" alt="Poster episodio 2">
+          </div>
+          <div>
+            <p class="card-text px-5 mb-4">Se desarrolla diez años después de los sucesos ocurridos en la película anterior, La amenaza fantasma. Después de la Batalla de Naboo, la galaxia se encuentra al borde de una guerra civil. Bajo la dirección de un Jedi renegado que se hace llamar Conde Dooku, muchos sistemas solares amenazan con la secesión de la República Galáctica. Tras los intentos de asesinato de la senadora Padmé Amidala, la anterior reina de Naboo, el Padawan Anakin Skywalker es asignado para protegerla, mientras que a su maestro, Obi-Wan Kenobi, se le asigna la investigación del intento de asesinato.</p>
+          </div>
+        </section>
+        <section class="acordeoncard" id="peli3">
+          <h2 class="card-title p-2"><a class="resaltartxt" href="#peli3">Star Wars: Episodio III La Venganza de los Sith</a></h2>
+          <div class="mx-auto text-center">
+            <img src="../img/episodio3.jpg" class="mb-2 imagenpelicula" alt="Poster episodio 3">
+          </div>
+          <div>
+            <p class="card-text px-5 mb-4">La trama describe una época en la que los Caballeros Jedi se han esparcido por toda la galaxia, dirigiendo un ejército clon masivo para enfrentar a los Separatistas Galácticos, tres años después del inicio de las Guerras Clon. El Canciller Palpatine fue secuestrado y el Maestro Jedi Obi-Wan Kenobi, acompañado de su aprendiz Anakin Skywalker, es enviado a rescatarlo en una misión, donde también debe eliminar a los Líderes Separatistas, el Conde Dooku y el General Grievous, para concluir el conflicto galáctico. Después de ser rescatado, el Canciller fortalece su amistad con Anakin, para poder convencerlo de que existen mayores beneficios en el Lado Oscuro de la Fuerza, que del Lado Luminoso. La Orden Jedi empieza a sospechar de la amistad entre el Canciller y Anakin, por lo que intenta averiguar los verdaderos objetivos de Palpatine. Cuando el Canciller se descubre, repentinamente, como el siniestro Lord Sith Darth Sidious, los destinos de la Orden Jedi y de la República Galáctica se encuentran expuestos ante un inminente peligro.</p>
+          </div>
+        </section>        
+      </div>
+    </div>
+  </div>
+</div>
+<script src="..\js\bootstrap.bundle.min.js"></script>
+<!-- ========= js anim ========== -->
+<script src="../js/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: 'ease-in-sine',
+    delay: 100,
+  });
+</script>
+</body>

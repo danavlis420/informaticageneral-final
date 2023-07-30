@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - STAR WARS</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/aos.css">
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img id="logonav" class="logo-navbar" src="..\img\logo1.png" onmouseover="this.src='../img/logo2.png'" onmouseout="this.src='../img/logo1.png'" alt="Logo de Star Wars"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="..\index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Películas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="..\peliculas\index.html">Info</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="..\peliculas\original.html">Trilogía original</a></li>
+                  <li><a class="dropdown-item" href="..\peliculas\precuelas.html">Precuelas</a></li>
+                  <li><a class="dropdown-item" href="..\peliculas\secuelas.html">Secuelas</a></li>
+                  <li><a class="dropdown-item" href="..\peliculas\otras.html">Otras</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Series
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="..\series\index.html">Info</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="..\series\animadas.html">Animadas</a></li>
+                  <li><a class="dropdown-item" href="..\series\live.html">Live action</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..\juegos\index.html">Videojuegos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="..\quiz\index.html">Quiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..\about\index.html">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..\contacto\index.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <video loop muted autoplay class="bg-video">
+      <source src="../video/fondo1.mp4" type="video/mp4">
+    </video>
+  <div class="w-75 mx-auto text-center" id="contenedortitulo">
+      <h1 class="p-3 titulo1" data-aos="fade-down">QUIZ</h1>
+  </div>
+  <div class="container my-4">
+    <div class="card cardinfo">
+      <div class="card-body">
+        <p class="card-text">Probá tus conocimientos sobre <span class="resaltartxt">Star Wars</span> con este juego de <span class="resaltartxt">10</span> preguntas sobre la saga.
+      </div>
+    </div>
+  </div>
+  <div class="container text-center mx-auto">
+    <div class="row">
+      <div class="col-md-4 my-2">
+        <div class="card cardinfo">
+          <h5 class="card-header">Pregunta 1</h5>
+          <div class="card-body">
+            <h5 class="card-title">¿Cuántas películas de Star Wars hay?</h5>
+            <label class="card-text text-start">
+              <input type="radio" value="1" name="p0" onclick="respuesta(0,this)"> 10
+            </label>
+            <label class="card-text text-start">
+              <input type="radio" value="2" name="p0" onclick="respuesta(0,this)"> 11
+            </label>
+            <label class="card-text text-start">
+              <input type="radio" value="3" name="p0" onclick="respuesta(0,this)"> 8
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 my-2">
+        <div class="card cardinfo">
+          <h5 class="card-header">Pregunta 2</h5>
+          <div class="card-body">
+            <h5 class="card-title">¿Cuál es el primer episodio de Star Wars?</h5>
+            <label class="card-text text-start">
+              <input type="radio" value="1" name="p1" onclick="respuesta(1,this)"> Episodio IV - Una nueva esperanza
+            </label>
+            <label class="card-text text-start">
+              <input type="radio" value="2" name="p1" onclick="respuesta(1,this)"> Episodio I - La amenaza fantasma
+            </label>
+            <label class="card-text text-start">
+              <input type="radio" value="3" name="p1" onclick="respuesta(1,this)"> Rogue One
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 my-2">
+        <div class="card cardinfo">
+          <h5 class="card-header">Pregunta 3</h5>
+          <div class="card-body">
+            <h5 class="card-title">¿Quién es el personaje principal de la trilogía original?</h5>
+            <label class="card-text text-start">
+              <input type="radio" value="1" name="p2" onclick="respuesta(2,this)"> Anakin Skywalker
+            </label>
+            <label class="card-text text-start">
+              <input type="radio" value="2" name="p2" onclick="respuesta(2,this)"> Luke Skywalker
+            </label>
+            <label class="card-text text-start">
+              <input type="radio" value="3" name="p2" onclick="respuesta(2,this)"> Darth Vader
+            </label>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-4 my-2">
+        <div class="card cardinfo">
+          <h5 class="card-header">Pregunta 4</h5>
+          <div class="card-body">
+            <h5 class="card-title">¿Quién es el villano principal de la trilogía original?</h5>
+            <label class="card-text text-start">
+              <input type="radio" value="1" name="p3" onclick="respuesta(3,this)"> Darth Maul
+            </label>
+            <label class="card-text text-start">
+              <input type="radio" value="2" name="p3" onclick="respuesta(3,this)"> Obi-Wan Kenobi
+            </label>
+            <label class="card-text text-start">
+              <input type="radio" value="3" name="p3" onclick="respuesta(3,this)"> Darth Vader
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 my-2">
+        <div class="card cardinfo">
+          <h5 class="card-header">Pregunta 5</h5>
+          <div class="card-body">
+            <h5 class="card-title">¿Quién es el creador de Star Wars?</h5>
+            <label class="card-text text-start">
+              <input type="radio" value="1" name="p4" onclick="respuesta(4,this)"> George Lucas
+            </label>
+            <label class="card-text text-start">
+              <input type="radio" value="2" name="p4" onclick="respuesta(4,this)"> Han Solo
+            </label>
+            <label class="card-text text-start">
+              <input type="radio" value="3" name="p4" onclick="respuesta(4,this)"> Natalie Portman
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 my-2">
+        <div class="card cardinfo">
+          <h5 class="card-header">Pregunta 6</h5>
+          <div class="card-body">
+            <h5 class="card-title">¿En qué lugar se encuentra el planeta natal de Luke Skywalker?</h5>
+            <label class="card-text text-start">
+              <input type="radio" value="1" name="p5" onclick="respuesta(5,this)"> Tatooine
+            </label>
+            <label class="card-text text-start">
+              <input type="radio" value="2" name="p5" onclick="respuesta(5,this)"> Geonosis
+            </label>
+            <label class="card-text text-start">
+              <input type="radio" value="3" name="p5" onclick="respuesta(5,this)"> La Tierra
+            </label>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-4 my-2">
+        <div class="card cardinfo">
+          <h5 class="card-header">Pregunta 7</h5>
+          <div class="card-body">
+            <h5 class="card-title">¿Qué arma utilizan los Jedi en las películas de Star Wars?</h5>
+            <label class="card-text text-start">
+              <input type="radio" value="1" name="p6" onclick="respuesta(6,this)"> Bláster
+            </label>
+            <label class="card-text text-start">
+              <input type="radio" value="2" name="p6" onclick="respuesta(6,this)"> AK-47
+            </label>
+            <label class="card-text text-start">
+              <input type="radio" value="3" name="p6" onclick="respuesta(6,this)"> Sables de luz
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 my-2">
+        <div class="card cardinfo">
+          <h5 class="card-header">Pregunta 8</h5>
+          <div class="card-body">
+            <h5 class="card-title">¿Quién es el maestro Jedi de Anakin Skywalker?</h5>
+            <label class="card-text text-start">
+              <input type="radio" value="1" name="p7" onclick="respuesta(7,this)"> Yoda
+            </label>
+            <label class="card-text text-start">
+              <input type="radio" value="2" name="p7" onclick="respuesta(7,this)"> Obi-Wan Kenobi
+            </label>
+            <label class="card-text text-start">
+              <input type="radio" value="3" name="p7" onclick="respuesta(7,this)"> Jabba el Hutt
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 my-2">
+        <div class="card cardinfo">
+          <h5 class="card-header">Pregunta 9</h5>
+          <div class="card-body">
+            <h5 class="card-title">¿Qué es C-3PO?</h5>
+            <label class="card-text text-start">
+              <input type="radio" value="1" name="p8" onclick="respuesta(8,this)"> Un arma
+            </label>
+            <label class="card-text text-start">
+              <input type="radio" value="2" name="p8" onclick="respuesta(8,this)"> Un planeta
+            </label>
+            <label class="card-text text-start">
+              <input type="radio" value="3" name="p8" onclick="respuesta(8,this)"> Un androide
+            </label>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-4 my-2">
+        <div class="card cardinfo">
+          <h5 class="card-header">Pregunta 10</h5>
+          <div class="card-body">
+            <h5 class="card-title">¿Qué relación tienen Luke y Leia?</h5>
+            <label class="card-text text-start">
+              <input type="radio" value="1" name="p9" onclick="respuesta(9,this)"> Pareja
+            </label>
+            <label class="card-text text-start">
+              <input type="radio" value="2" name="p9" onclick="respuesta(9,this)"> Hermanos
+            </label>
+            <label class="card-text text-start">
+              <input type="radio" value="3" name="p9" onclick="respuesta(9,this)"> Enemigos
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 my-2">
+        <div class="card cardinfo h-100">
+          <h5 class="card-header">FINAL</h5>
+          <div class="card-body">
+            <h5 class="card-title mb-4" id="textopuntaje">Apretá el botón para conocer tu puntaje</h5>
+            <p class="card-text text-center fs-3 mb-4" id="puntaje"></p>
+            <button class="btn btn-outline-warning" onclick="puntaje()">Terminar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 my-2">
+        <div class="card cardinfo h-100">
+          <h5 class="card-header">Pista</h5>
+          <img src="..\img\yoda.png" class="h-50 w-50 mx-auto" alt="Yoda">
+          <div class="card-body">
+            <p class="card-text text-start">Podés encontrar algunas de las respuestas navegando en las distintas secciones de la página.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<script src="..\js\bootstrap.bundle.min.js"></script>
+<script src="..\js\quiz.js"></script>
+<!-- ========= js anim ========== -->
+<script src="../js/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: 'ease-in-sine',
+    delay: 100,
+  });
+</script>
+</body>

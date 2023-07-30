@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de - STAR WARS</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/aos.css">
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img id="logonav" class="logo-navbar" src="..\img\logo1.png" onmouseover="this.src='../img/logo2.png'" onmouseout="this.src='../img/logo1.png'" alt="Logo de Star Wars"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="..\index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Películas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="..\peliculas\index.html">Info</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="..\peliculas\original.html">Trilogía original</a></li>
+                  <li><a class="dropdown-item" href="..\peliculas\precuelas.html">Precuelas</a></li>
+                  <li><a class="dropdown-item" href="..\peliculas\secuelas.html">Secuelas</a></li>
+                  <li><a class="dropdown-item" href="..\peliculas\otras.html">Otras</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Series
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="..\series\index.html">Info</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="..\series\animadas.html">Animadas</a></li>
+                  <li><a class="dropdown-item" href="..\series\live.html">Live action</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..\juegos\index.html">Videojuegos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..\quiz\index.html">Quiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="..\about\index.html">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..\contacto\index.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <video loop muted autoplay class="bg-video">
+      <source src="../video/fondo1.mp4" type="video/mp4">
+    </video>
+</div>
+<div class="row d-flex justify-content-center">
+  <div class="card p-4 text-center cardinfo mx-auto w-50 my-4" data-aos="fade-up">
+     <img class="w-50 rounded mx-auto my-4" src="../img/yo.png" alt="Silva Daniel">
+     <p>Alumno: Silva Daniel Agustín</p>
+     <p>DNI: 43461720</p>
+     <p>Examen FINAL, Informática general - Cátedra Drelichman - Turno mañana</p>
+     <h2>2022</h2>
+  </div>
+</div>
+<script src="..\js\bootstrap.bundle.min.js"></script>
+<!-- ========= js anim ========== -->
+<script src="../js/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: 'ease-in-sine',
+    delay: 100,
+  });
+</script>
+</body>

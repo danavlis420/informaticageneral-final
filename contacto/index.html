@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - STAR WARS</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/aos.css">
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img id="logonav" class="logo-navbar" src="..\img\logo1.png" onmouseover="this.src='../img/logo2.png'" onmouseout="this.src='../img/logo1.png'" alt="Logo de Star Wars"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="..\index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Películas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="..\peliculas\index.html">Info</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="..\peliculas\original.html">Trilogía original</a></li>
+                  <li><a class="dropdown-item" href="..\peliculas\precuelas.html">Precuelas</a></li>
+                  <li><a class="dropdown-item" href="..\peliculas\secuelas.html">Secuelas</a></li>
+                  <li><a class="dropdown-item" href="..\peliculas\otras.html">Otras</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Series
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="..\series\index.html">Info</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="..\series\animadas.html">Animadas</a></li>
+                  <li><a class="dropdown-item" href="..\series\live.html">Live action</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..\juegos\index.html">Videojuegos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..\quiz\index.html">Quiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..\about\index.html">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="..\contacto\index.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <video loop muted autoplay class="bg-video">
+      <source src="../video/fondo1.mp4" type="video/mp4">
+    </video>
+</div>
+<form class="row h-75 w-100 needs-validation" novalidate>
+  <div class="col-md p-4 text-center card cardinfo m-4">
+     <h3 class="card-title">Nombre</h1>
+     <label for="nameInput" class="form-label card-text">Nombre</label>
+     <input type="text" class="form-control" id="nameInput" placeholder="Tu nombre..." required>
+     <div class="valid-feedback">
+       Listo
+     </div>
+     <div class="invalid-feedback">
+       Este campo es obligatorio
+     </div>
+  </div>
+  <div class="col-md p-4 text-center card cardinfo m-4">
+   <h3 class="card-title">Email</h1>
+   <label for="mailInput" class="form-label card-text">Email</label>
+     <input type="email" class="form-control" id="mailInput" placeholder="E-mail..." required>
+     <div class="valid-feedback">
+       Listo
+     </div>
+     <div class="invalid-feedback">
+       Ingresa un correo válido
+     </div>
+  </div>
+   <div class="col-md p-4 text-center card cardinfo m-4">
+    <h3 class="card-title">Enviar!</h1>
+    <div class="form-check">
+     <label for="terminos" class="form-check-label card-text">Acepto los términos y condiciones</label>
+     <input type="checkbox" id="terminos" class="form-check-input">
+     <div class="valid-feedback">
+       Listo
+     </div>
+     <div class="invalid-feedback">
+       Es necesario aceptar términos y condiciones
+     </div>
+   </div>
+   <button type="submit" class="btn btn-dark">Enviar</button>
+ </div>
+</form>
+<!-- ========== Validación js de bootstrap ========== -->
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+'use strict'
+
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+const forms = document.querySelectorAll('.needs-validation')
+
+// Loop over them and prevent submission
+Array.from(forms).forEach(form => {
+  form.addEventListener('submit', event => {
+    if (!form.checkValidity()) {
+      event.preventDefault()
+      event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
+<script src="..\js\bootstrap.bundle.min.js"></script>
+<!-- ========= js anim ========== -->
+<script src="../js/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: 'ease-in-sine',
+    delay: 100,
+  });
+</script>
+</body>

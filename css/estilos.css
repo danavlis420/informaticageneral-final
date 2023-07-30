@@ -1,0 +1,146 @@
+*{
+    z-index: 3;
+}
+.navbar{
+    z-index: 5 !important;
+}
+@font-face {
+    font-family: titulo1;
+    src: url(../font/soloistacad.ttf);
+}
+@font-face {
+    font-family: titulo2;
+    src: url(../font/soloist1.ttf);
+}
+@font-face {
+  font-family: titulo3;
+  src: url(../font/Starjedi.ttf);
+}
+body{
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    min-height: 100vh;  
+}
+.dropdown-menu .active{
+    background-color: #181818;
+    color: gold;
+}
+.nav-item a.active{
+    color: gold !important;
+}
+.logo-navbar{
+    width: 100px;
+}
+.titulo1{
+    font-size: 4em;
+    font-family: titulo1;
+    color: gold;
+}
+.titulo2{
+    font-family: titulo1;
+    color: gold;
+}
+.titulo3{
+    font-family: titulo2;
+    color: honeydew;
+}
+@media (max-width:768px){
+    #contenedortitulo{
+        width:90% !important;
+        font-size: .7em;
+    }
+}
+.cardinfo{
+    background-color: #181818;
+    color: antiquewhite;
+}
+
+.resaltartxt{
+    color: goldenrod;
+    text-decoration: none;
+}
+.card-header{
+    color: darkgray !important;
+}
+label{
+    display: block;
+    cursor: pointer;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+label:hover{
+    background-color: #202020;
+}
+#puntaje{
+    color:goldenrod;
+}
+.card-header{
+    background-color: #101010;
+}
+.linkcardnav{
+    background-color: #202020 !important;
+    border-style: none !important;
+}
+/**/
+.acordeoncard{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.acordeoncard div {
+    overflow: hidden;
+    max-height: 0;
+    text-align: justify;
+    transition: all 0.2s ease-in;
+}
+.acordeoncard:target div {
+    max-height: fit-content;
+}
+.acordeoncard h2:hover{
+    background-color: #202020;
+    color: antiquewhite;
+}
+.linkcard a{
+    display: block;
+    color: darkgrey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    margin: 0;
+}
+.linkcardactivo a{
+    color: goldenrod;
+    background-color: #202020;
+}
+.linkcard:hover{
+    background-color: #101010;
+    color: antiquewhite;
+}
+.imagenpelicula{
+    height: 350px;
+    padding: 20px;
+}
+#paginadeinicio{
+    background-image: url(../img/estrellas.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    min-height: 100vh;  
+}
+.imageninicio{
+    max-height: 570px;
+}
+.bg-video{
+    position: fixed;
+    overflow: hidden;
+    z-index: -2;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    object-fit: cover;
+}
